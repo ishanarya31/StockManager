@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".InventoryPage"
+    android:background="#172733">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#121E29"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="169dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:text="Sale"
+        android:textColor="#F4EA8B"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="664dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#121E29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="2dp"
+        android:background="#0C131B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageButton
+        android:id="@+id/kebab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/blueblack"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_jc45pcxig4ibfcb5tvrx9tt2uf" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
